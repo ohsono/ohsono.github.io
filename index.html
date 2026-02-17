@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hochan Son — Data Engineer & ML Practitioner</title>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --surface: #161922;
+            --border: #23273a;
+            --text: #e4e6ed;
+            --muted: #8b8fa3;
+            --accent: #6c9eff;
+            --accent-dim: rgba(108, 158, 255, 0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 80px 0 48px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        header .tagline {
+            font-size: 1.15rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        header .location {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        header p.bio {
+            margin-top: 24px;
+            font-size: 1.05rem;
+            color: var(--muted);
+            max-width: 640px;
+        }
+
+        .links {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .links a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        /* Sections */
+        section {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 28px;
+            font-weight: 600;
+        }
+
+        /* Experience */
+        .experience-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .exp-item {
+            display: flex;
+            gap: 20px;
+            align-items: baseline;
+        }
+
+        .exp-item .company {
+            font-weight: 600;
+            font-size: 1.05rem;
+            min-width: 160px;
+            flex-shrink: 0;
+        }
+
+        .exp-item .role {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        /* Skills grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .skill-group h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .skill-group ul {
+            list-style: none;
+        }
+
+        .skill-group li {
+            color: var(--muted);
+            font-size: 0.95rem;
+            padding: 3px 0;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px;
+        }
+
+        .project-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 22px;
+            transition: border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+        }
+
+        .project-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .project-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .project-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .project-card .tag {
+            font-size: 0.75rem;
+            color: var(--accent);
+            background: var(--accent-dim);
+            padding: 3px 10px;
+            border-radius: 4px;
+        }
+
+        /* Focus areas */
+        .focus-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 12px;
+        }
+
+        .focus-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .focus-item .icon {
+            font-size: 1.2rem;
+            width: 28px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header { padding: 48px 0 32px; }
+            header h1 { font-size: 1.8rem; }
+            .exp-item { flex-direction: column; gap: 2px; }
+            .exp-item .company { min-width: auto; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .focus-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hochan Son</h1>
+            <div class="tagline">Data Engineer &amp; ML Practitioner</div>
+            <div class="location">Los Angeles, CA</div>
+            <p class="bio">
+                I build data infrastructure, ML pipelines, and distributed systems.
+                My background spans adtech, entertainment, and enterprise —
+                with graduate work at UCLA in Applied Data Science.
+            </p>
+            <div class="links">
+                <a href="https://github.com/ohsono" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/hochanson" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="exp-item">
+                    <span class="company">UCLA</span>
+                    <span class="role">Master of Applied Data Science (MASDS)</span>
+                </div>
+                <div class="exp-item">
+                    <span class="company">Branch.io</span>
+                    <span class="role">Data engineering &amp; mobile attribution platform</span>
+                </div>
+                <div class="exp-item">
+                    <span class="company">Hallmark Labs</span>
+                    <span class="role">Data infrastructure &amp; analytics</span>
+                </div>
+                <div class="exp-item">
+                    <span class="company">MySpace</span>
+                    <span class="role">Data engineering at scale</span>
+                </div>
+                <div class="exp-item">
+                    <span class="company">ADP</span>
+                    <span class="role">Enterprise data systems</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Areas of Focus</h2>
+            <div class="focus-list">
+                <div class="focus-item">
+                    <span class="icon">&#x2699;</span>
+                    Synthetic data generation &amp; privacy-preserving ML
+                </div>
+                <div class="focus-item">
+                    <span class="icon">&#x26A1;</span>
+                    Large-scale data pipelines &amp; distributed training
+                </div>
+                <div class="focus-item">
+                    <span class="icon">&#x1F916;</span>
+                    LLM inference &amp; serving
+                </div>
+                <div class="focus-item">
+                    <span class="icon">&#x1F5C4;</span>
+                    Database engineering &amp; optimization
+                </div>
+                <div class="focus-item">
+                    <span class="icon">&#x1F6E0;</span>
+                    CI/CD &amp; containerized ML workflows
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <div class="projects-grid">
+                <a class="project-card" href="https://github.com/ohsono/KPA" target="_blank">
+                    <h3>KPA</h3>
+                    <p>Kafka-Python-Admin — tooling for Apache Kafka cluster management and monitoring.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Kafka</span>
+                    </div>
+                </a>
+                <a class="project-card" href="https://github.com/ohsono/SentimentAnalysis" target="_blank">
+                    <h3>Sentiment Analysis</h3>
+                    <p>UCLA STATS-418 final project: sentiment analysis pipeline and model evaluation.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </a>
+                <a class="project-card" href="https://github.com/ohsono/CI-Pathway-exercise" target="_blank">
+                    <h3>CI Pathway</h3>
+                    <p>2025 NCSA Cyberinfrastructure Pathway exercise project.</p>
+                    <div class="tags">
+                        <span class="tag">HPC</span>
+                        <span class="tag">CI</span>
+                    </div>
+                </a>
+                <a class="project-card" href="https://github.com/ohsono/Mtcars-Flask-Api" target="_blank">
+                    <h3>Mtcars Flask API</h3>
+                    <p>RESTful ML API built with Flask for model serving and prediction.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">API</span>
+                    </div>
+                </a>
+                <a class="project-card" href="https://github.com/ohsono/stats414" target="_blank">
+                    <h3>Stats 414</h3>
+                    <p>UCLA MASDS group project — statistical modeling and analysis.</p>
+                    <div class="tags">
+                        <span class="tag">Jupyter</span>
+                        <span class="tag">Statistics</span>
+                    </div>
+                </a>
+                <a class="project-card" href="https://github.com/ohsono/proxysql" target="_blank">
+                    <h3>ProxySQL POC</h3>
+                    <p>Proof-of-concept for ProxySQL-based MySQL query routing and load balancing.</p>
+                    <div class="tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">ProxySQL</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Go</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>ML / AI</h3>
+                    <ul>
+                        <li>PyTorch</li>
+                        <li>Diffusion Models</li>
+                        <li>VAE</li>
+                        <li>vLLM / MLX</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Data</h3>
+                    <ul>
+                        <li>Kafka</li>
+                        <li>LMDB</li>
+                        <li>MySQL</li>
+                        <li>Datadog</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Infrastructure</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>GitHub Actions</li>
+                        <li>Distributed GPU</li>
+                        <li>ProxySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Hochan Son
+        </footer>
+    </div>
+</body>
+</html>
