@@ -1,0 +1,148 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Hochan Son
+  given: Hochan
+  family: Son
+  pronouns: he/him
+role: Database Architect · SRE & DevOps Engineer · ML/GenAI Practitioner
+
+bio: |
+  Hochan Son is a distributed systems architect and site reliability engineer
+  who builds data infrastructure, ML pipelines, and high-scale distributed
+  systems, working the gap between GenAI/LLM research and the systems that run it
+  in production. His graduate research at the UCLA Trustworthy AI Lab spans
+  synthetic tabular data generation and agentic, intent-conditioned model
+  selection. His background spans Adtech, entertainment, and enterprise — from
+  MySpace and Hallmark Labs to Branch.io and ADP.
+
+affiliations:
+  - name: UCLA Trustworthy AI Lab
+
+location: Los Angeles, CA
+
+links:
+  - icon: brands/github
+    url: https://github.com/ohsono
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/hochanson
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=GHVmTV0AAAAJ&hl=en
+  - icon: academicons/arxiv
+    url: https://arxiv.org/abs/2604.00293
+
+interests:
+  - Generative AI, LLMs, RAG & agentic (Chain-of-Agents) systems
+  - Synthetic data generation & privacy-preserving ML
+  - Large-scale database engineering (RDBMS, NoSQL, Distributed SQL)
+  - SRE, DevOps & cloud-native infrastructure
+  - Local LLM inference & distributed GPU training
+
+education:
+  - degree: MASDS — Applied Statistics and Data Science
+    institution: University of California, Los Angeles (UCLA)
+    year: "2024 – 2026"
+    start: 2024-01-01
+    end: 2026-01-01
+    summary: |
+      Master of Applied Statistics and Data Science (pending thesis), GPA 4.0.
+      Graduate research at the UCLA Trustworthy AI Lab. Outstanding Master's
+      Award, 2025–26.
+  - degree: B.S. CSE — Computer Science and Engineering
+    institution: University at Buffalo (SUNY)
+    year: "2006 – 2009"
+    start: 2006-01-01
+    end: 2009-01-01
+
+experience:
+  - role: Research Engineer
+    org: UCLA Trustworthy AI Lab
+    start: 2025-02-01
+    summary: |
+      - Led engineering of [**SYNTHONY**](https://github.com/UCLA-Trustworthy-AI-Lab/Synthony)
+        (ICLR 2026 DeLTA) and built
+        [**table-synthesizers**](https://github.com/UCLA-Trustworthy-AI-Lab/table-synthesizers),
+        a unified library of 16 generative architectures (GAN, VAE, Diffusion, DP)
+        with an automated evaluation pipeline.
+      - Built a **Chain-of-Agents** approach for memory-efficient LLM inference
+        on edge devices (paper under review).
+      - Contributed to **vLLM** open source — resolved async scheduling bugs
+        ([PR #31607](https://github.com/vllm-project/vllm/pull/31607)), optimizing
+        the V1 Engine for NVIDIA Blackwell.
+      - Architected edge-to-cloud LLM deployments (gpt-oss-120b + gemma) on
+        vLLM across NVIDIA edge-to-datacenter GPUs.
+      - Built W&B + GitHub Actions MLOps/CI-CD pipelines and benchmarked
+        transformer workloads on hybrid HPC (NVIDIA GPU Cloud, DeltaAI).
+  - role: Sr. Database SRE
+    org: Branch Metrics
+    start: 2021-06-01
+    end: 2023-08-31
+    summary: |
+      - Orchestrated Kubernetes environments exceeding **1,000 nodes** and
+        optimized Aerospike systems processing **400M transactions/second**.
+      - Drove "shift-left" DevEx with custom Python and Flyway tooling.
+      - Achieved **$600K** in annual cloud savings via AWS optimization.
+  - role: Sr. Database Engineer
+    org: Hallmark Labs
+    start: 2019-05-01
+    end: 2020-10-31
+    summary: |
+      - Managed **300+ MySQL databases** and **25+ Kafka clusters** with
+        Terraform (IaC) on AWS; saved $100K migrating to AWS MSK.
+      - Built Python/Jenkins ETL and release-packaging pipelines; added
+        Datadog/Prometheus consumer-lag monitoring.
+  - role: Sr. MySQL DBA
+    org: TMBC (ADP)
+    start: 2018-01-01
+    end: 2019-12-31
+    summary: |
+      - Implemented database source control on GitHub and piloted ProxySQL for
+        performance.
+  - role: Database Reliability Engineer
+    org: Viant (Myspace)
+    start: 2014-01-01
+    end: 2018-12-31
+    summary: |
+      - Managed GCP compute nodes and executed zero-downtime migration of
+        **1,400+ databases** at 99.99% uptime.
+  - role: Database Administrator
+    org: AltaMed & Nexon America
+    start: 2010-01-01
+    end: 2014-12-31
+    summary: |
+      - Managed high-availability SQL Server environments (**200+ instances**)
+        across healthcare and gaming.
+  - role: Data Analyst
+    org: Internet Brands (CarsDirect.com)
+    start: 2009-01-01
+    end: 2010-12-31
+
+skills:
+  - name: Infrastructure & SRE
+    items:
+      - label: Kubernetes (1,000+ nodes, k8s / k3s / bare-metal)
+      - label: AWS (EKS, MSK, S3) & GCP (GKE)
+      - label: Terraform, Docker, Helm, CI/CD
+  - name: Data & Databases
+    items:
+      - label: MySQL / SQL Server / SQL optimization
+      - label: Aerospike, Kafka, ProxySQL
+      - label: Prometheus, Grafana, Datadog, Weights & Biases
+  - name: ML / AI & Inference
+    items:
+      - label: vLLM, TRT-LLM, PyTorch, HuggingFace
+      - label: CUDA (Blackwell), GPU profiling & transformer optimization
+      - label: Agentic architectures, generative models (VAE, Diffusion)
+  - name: Languages
+    items:
+      - label: Python
+      - label: SQL
+      - label: Go / C / Bash
+
+awards:
+  - title: Outstanding Master's Award
+    awarder: UCLA
+    date: "2026-06-01"
+    summary: Awarded for outstanding achievement in the MASDS program (2025–26).
+    icon: hero/trophy

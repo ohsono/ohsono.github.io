@@ -1,0 +1,25 @@
+{{/* Custom responsive grid tuning for CV card grids.
+     Widens the education & skills grids so cards fit their content and
+     resize dynamically (auto-fit) — comfortable on mobile and desktop. */}}
+<style>
+  /* Education cards (resume-biography-3): replace the fixed 2/3-column grid
+     with a fluid auto-fit grid so each card gets enough width for its title. */
+  @media (min-width: 768px) {
+    .resume-biography .grid.md\:grid-cols-2.xl\:grid-cols-3 {
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)) !important;
+    }
+  }
+
+  /* Skills grid (resume-skills): the theme constrains it to a narrow prose
+     width, which crowds multiple skill groups. Relax the width and let the
+     group columns auto-fit. */
+  @media (min-width: 768px) {
+    .flex.max-w-prose,
+    .grid.max-w-prose {
+      max-width: 64rem !important;
+    }
+    .grid.max-w-prose {
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)) !important;
+    }
+  }
+</style>
