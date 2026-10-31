@@ -46,7 +46,10 @@ education:
     start: 2024-01-01
     end: 2026-01-01
     summary: |
-      Master of Applied Statistics and Data Science (pending thesis), GPA 4.0.
+      Master of Applied Statistics and Data Science, GPA 4.0. Thesis: *Toward an
+      Auto-Synthesizer: Stress-Aware Selection and Recommendation of Deep Tabular
+      Generative Models*
+      ([eScholarship](https://escholarship.org/uc/item/5nb9r7mc)).
       Graduate research at the UCLA Trustworthy AI Lab. Outstanding Master's
       Award, 2025–26.
   - degree: B.S. CSE — Computer Science and Engineering
@@ -66,7 +69,8 @@ experience:
         a unified library of 16 generative architectures (GAN, VAE, Diffusion, DP)
         with an automated evaluation pipeline.
       - Built a **Chain-of-Agents** approach for memory-efficient LLM inference
-        on edge devices (paper under review).
+        on edge devices (NeurIPS 2026 MLForSys workshop, poster;
+        [arXiv:2610.07782](https://arxiv.org/abs/2610.07782)).
       - Contributed to **vLLM** open source — resolved async scheduling bugs
         ([PR #31607](https://github.com/vllm-project/vllm/pull/31607)), optimizing
         the V1 Engine for NVIDIA Blackwell.
