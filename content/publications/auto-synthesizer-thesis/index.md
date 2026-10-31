@@ -10,8 +10,8 @@ publishDate: '2026-10-05T00:00:00Z'
 publication_types: ['thesis']
 
 publication:
-  name: "M.S. thesis, Applied Statistics and Data Science, University of California, Los Angeles"
-  short_name: "UCLA M.S. Thesis"
+  name: "Master's thesis, Applied Statistics & Data Science, University of California, Los Angeles"
+  short_name: "UCLA Master's Thesis"
 
 abstract: >-
   Deep generative models for tabular data — GANs, variational autoencoders,
@@ -57,7 +57,7 @@ abstract: >-
   recommendations.
 
 summary: >-
-  M.S. thesis (UCLA): Table-Synthesizers (19 generators behind one interface)
+  Master's thesis (UCLA): Table-Synthesizers (19 generators behind one interface)
   plus SYNTHONY's stress profiling, for selecting a tabular generative model
   without training every candidate.
 

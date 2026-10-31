@@ -69,7 +69,8 @@ experience:
         a unified library of 16 generative architectures (GAN, VAE, Diffusion, DP)
         with an automated evaluation pipeline.
       - Built a **Chain-of-Agents** approach for memory-efficient LLM inference
-        on edge devices (NeurIPS 2026 MLForSys workshop, poster).
+        on edge devices (NeurIPS 2026 MLForSys workshop, poster;
+        [arXiv:2610.07782](https://arxiv.org/abs/2610.07782)).
       - Contributed to **vLLM** open source — resolved async scheduling bugs
         ([PR #31607](https://github.com/vllm-project/vllm/pull/31607)), optimizing
         the V1 Engine for NVIDIA Blackwell.
