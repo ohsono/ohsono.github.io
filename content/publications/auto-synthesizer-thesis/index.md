@@ -73,6 +73,9 @@ links:
   - type: custom
     label: eScholarship
     url: https://escholarship.org/uc/item/5nb9r7mc
+  - type: custom
+    label: Table-Synthesizers
+    url: https://github.com/UCLA-Trustworthy-AI-Lab/table-synthesizers
 
 projects:
   - synthony
