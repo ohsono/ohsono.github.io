@@ -11,6 +11,9 @@ links:
     icon: github
     name: Code
     url: https://github.com/UCLA-Trustworthy-AI-Lab/table-synthesizers
+  - icon: hero/academic-cap
+    name: Thesis
+    url: /publications/auto-synthesizer-thesis/
 ---
 
 Unified 16 synthesizer architectures (CTGAN, TVAE, TabDDPM, AutoDiff, TabSyn,
@@ -20,3 +23,7 @@ end-to-end training → generation → evaluation loop, integrating with
 alfred-analytica for fidelity and machine-learning-efficacy scoring against real
 data. Deployed distributed training on NCSA DeltaAI (SLURM, H100 GPU nodes) with
 reproducible experiment tracking and versioned experiment outputs.
+
+Table-Synthesizers is the generation and measurement substrate of my Master's
+thesis, [*Toward an Auto-Synthesizer: Stress-Aware Selection and Recommendation of
+Deep Tabular Generative Models*](/publications/auto-synthesizer-thesis/).
