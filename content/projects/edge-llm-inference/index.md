@@ -1,5 +1,6 @@
 ---
 title: Edge LLM Inference via Chain of Agents
+linkTitle: Edge LLM Inference
 summary: Memory-efficient local LLM inference using a Chain-of-Agents approach.
 date: 2026-06-01
 tags:
