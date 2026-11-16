@@ -59,6 +59,9 @@ education:
     end: 2009-01-01
 
 experience:
+  - role: R&D Researcher
+    org: CODAS
+    start: 2026-01-01
   - role: Research Engineer
     org: UCLA Trustworthy AI Lab
     start: 2025-02-01
